@@ -1,0 +1,25 @@
+{
+  "name": "cad-render-smoke",
+  "description": "Pack smoke: render minimal-scad fixture via CAD sidecar (harness-only).",
+  "tags": ["pack-smoke", "cad"],
+  "channel": "collab-scenarios",
+  "agents": "",
+  "workspace": {
+    "path_env": "NJ_CAD_SMOKE_FIXTURE",
+    "workspace_flag": false,
+    "outline": false
+  },
+  "setup": {
+    "packs": ["cad"]
+  },
+  "steps": [
+    {"action": "setup_pack", "pack_id": "cad"},
+    {
+      "action": "assert_cad_render",
+      "fixture_scad": "scenarios/fixtures/minimal-scad/cube.scad",
+      "params": {"size": "20"},
+      "min_stl_b64_bytes": 80
+    }
+  ],
+  "cleanup": "none"
+}

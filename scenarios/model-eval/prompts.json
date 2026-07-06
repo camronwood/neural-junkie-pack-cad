@@ -1,0 +1,50 @@
+{
+  "description": "Fixed prompts for CAD LLM OpenSCAD compile evaluation (Phase 0).",
+  "prompts": [
+    {
+      "id": "simple-cube",
+      "prompt": "Create a parametric 20mm cube with OpenSCAD Customizer section Dimensions.",
+      "expect_compile": true
+    },
+    {
+      "id": "box-lid",
+      "prompt": "Parametric box with removable lid, 80x50x30mm outer, 2mm wall thickness.",
+      "expect_compile": true
+    },
+    {
+      "id": "phone-stand",
+      "prompt": "Phone stand with adjustable angle variable and stable base, printable on FDM.",
+      "expect_compile": true
+    },
+    {
+      "id": "bracket",
+      "prompt": "L-bracket with mounting holes for M3 screws, parametric leg lengths.",
+      "expect_compile": true
+    },
+    {
+      "id": "washer",
+      "prompt": "Parametric flat washer with inner and outer diameter variables, 2mm thick.",
+      "expect_compile": true
+    },
+    {
+      "id": "spacer",
+      "prompt": "Cylindrical spacer with parametric height and inner bore for M4 bolt, 3mm wall.",
+      "expect_compile": true
+    },
+    {
+      "id": "hook",
+      "prompt": "Wall hook with parametric depth and hook radius, minimum 3mm thickness for FDM.",
+      "expect_compile": true
+    },
+    {
+      "id": "enclosure-base",
+      "prompt": "Electronics enclosure base tray 100x60x20mm with 2.4mm walls and corner screw bosses.",
+      "expect_compile": true
+    }
+  ],
+  "candidate_models": [
+    "qwen3.5:27b",
+    "qwen3.5:9b",
+    "nj-cad:27b"
+  ]
+}

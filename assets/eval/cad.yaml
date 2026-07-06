@@ -1,0 +1,12 @@
+agent_type: cad
+questions:
+  - prompt: "What is parametric modeling in OpenSCAD?"
+    keywords: ["parameter", "variable", "model", "scad"]
+  - prompt: "How do you export a mesh for 3D printing?"
+    keywords: ["stl", "export", "mesh"]
+  - prompt: "What wall thickness is typical for FDM printing?"
+    keywords: ["wall", "thickness", "mm", "fdm"]
+  - prompt: "How do overhangs affect 3D printability?"
+    keywords: ["overhang", "support", "angle", "print"]
+  - prompt: "When should you consult ManufacturingExpert?"
+    keywords: ["print", "slicer", "gcode", "step", "manufacturing"]
